@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    double base,altura,area,perimetro,diagonal;
+
+    cout<<"Base do retangulo: ";
+    cin>>base;
+    cout<<"Altura do terreno: ";
+    cin>>altura;
+
+    area = base * altura;
+
+    perimetro = (2 * base) + (2* altura);
+
+    diagonal =  sqrt(base * base + altura * altura);
+
+    cout << fixed << setprecision(4);
+    cout << "Area = " << area << endl;
+    cout << "Perimetro = " << perimetro << endl;
+    cout << "Diagonal = " << diagonal << endl;
+
+
+    return 0;
+}
